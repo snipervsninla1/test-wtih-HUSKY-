@@ -1,0 +1,61 @@
+{
+  "name": "testwithKeycloak",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node src/main.ts",
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "postinstall": "husky install",
+    "pre-push": "npm run lint --fix"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,html,vue}": [
+      "prettier --single-quote --write",
+      "git add"
+    ],
+    "*.js": "eslint --cache --fix"
+  },
+  "dependencies": {
+    "keycloak-js": "^17.0.0",
+    "node": "^17.4.0",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12",
+    "vuejs-logger": "^1.5.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "eslint": "^8.9.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.4.1",
+    "eslint-pre-commit-hook": "^2.0.7",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.4",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0",
+    "vue-tsc": "^0.29.8"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "vue/no-multiple-template-root": "off"
+    }
+  }
+}
