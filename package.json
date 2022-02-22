@@ -14,7 +14,7 @@
     "pre-push": "npm run lint --fix"
   },
   "lint-staged": {
-    "*.{js,json,css,md,html,vue}": [
+    "*.{js,json,css,md,html,vue,ts}": [
       "prettier --single-quote --write",
       "prettier --bracketSameLine --write",
       "prettier --semi --write",
@@ -23,6 +23,7 @@
     "*.js": "eslint --cache --fix"
   },
   "dependencies": {
+    "eslint-config-with-prettier": "^6.0.0",
     "keycloak-js": "^17.0.0",
     "node": "^17.4.0",
     "vue": "^3.2.25",
