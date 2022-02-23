@@ -11,27 +11,27 @@
 </template>
 
 <script>
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String,
-  },
-  computed: {
-    isAuthenticated: () => {
-      return Vue.$keycloak.authenticated
+    name: 'HelloWorld',
+    props: {
+        msg: String,
     },
-  },,;
-  methods: {
-    login() {
-      Vue.$keycloak.login({ redirectUri: window.location.origin })
+    computed: {
+        isAuthenticated: () => {
+            return Vue.$keycloak.authenticated;
+        },
     },
-    logout() {
-      Vue.$keycloak.logout({ redirectUri: window.location.origin })
+    methods: {
+        login() {
+            Vue.$keycloak.login({ redirectUri: window.location.origin });
+        },
+        logout() {
+            Vue.$keycloak.logout({ redirectUri: window.location.origin });
+        },
     },
-  },
-}
+};
 </script>
 
 <style scoped lang="css">

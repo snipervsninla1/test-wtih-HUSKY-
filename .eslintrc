@@ -3,15 +3,45 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "plugin:vue/essential",
+    "extends": ["plugin:vue/essential","prettier"],
     "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
         "ecmaVersion": "latest",
         "parser": "@typescript-eslint/parser",
         "sourceType": "module"
     },
-    "plugins": ["vue", "@typescript-eslint"],
+    "plugins": ["vue", "@typescript-eslint","prettier"],
+    "globals": {
+        "_": true,
+        "$": true
+
+
+    },
     "rules": {
         "vue/no-multiple-template-root": "off",
-        " eslintPreCommitBaseCommand ": " eslint --max-warnings=0 "
+        " eslintPreCommitBaseCommand ": " eslint --max-warnings=0 ",
+        "prettier/prettier": "error",
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
+        "curly": ["error", "all"],
+        "indent": [
+            "error",
+            "tab"
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "space-before-blocks": "off"
     }
 }
