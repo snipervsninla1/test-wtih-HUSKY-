@@ -1,13 +1,13 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>Clicked the link and see the content blocked by authorization.</p>
-    <p>Use the login button bellow to connect</p>
-    <div v-if="!isAuthenticated"><button @click="login">Login</button></div>
-    <div v-else>
-      <button @click="logout">Logout</button>
+    <div class="hello">
+        <h1>{{ msg }}</h1>
+        <p>Clicked the link and see the content blocked by authorization.</p>
+        <p>Use the login button bellow to connect</p>
+        <div v-if="!isAuthenticated"><button @click="login">Login</button></div>
+        <div v-else>
+            <button @click="logout">Logout</button>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
     isAuthenticated: () => {
       return Vue.$keycloak.authenticated
     },
-  },
+  },,;
   methods: {
     login() {
       Vue.$keycloak.login({ redirectUri: window.location.origin })
@@ -36,17 +36,17 @@ export default {
 
 <style scoped lang="css">
 h3 {
-  margin: 40px 0 0;
+    margin: 40px 0 0;
 }
 ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 li {
-  display: inline-block;
-  margin: 0 10px;
+    display: inline-block;
+    margin: 0 10px;
 }
 a {
-  color: #42b983;
+    color: #42b983;
 }
 </style>
