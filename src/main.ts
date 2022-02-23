@@ -1,12 +1,22 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-createApp(App).mount('#app')
+createApp(App).mount('#app');
 
-const test = '12'
-const sd = 7
-const one = '78'
+const didShoshMessage = false;
 
-const two = 79
+function showmessage() {
+  const message = 'I like logs';
+  for (let i = 0; i < 5; i++) {
+    console.log(message);
+  }
+}
 
-const three = '7'
+showmessage();
+const test = {
+  name: 'ali',
+  age: 12,
+};
+const personne = test['name'];
+const foo = { class: 'CS 101' };
+const x = foo['class'];
