@@ -15,9 +15,7 @@
   },
   "lint-staged": {
     "*.{js,json,css,md,html,vue,ts}": [
-      "prettier --single-quote --write",
-      "prettier --bracketSameLine --write",
-      "prettier --semi --write",
+      "prettier --write --ignore-unknown",
       "git add"
     ],
     "*.js": "eslint --cache --fix"
@@ -59,10 +57,6 @@
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {
-      "vue/no-multiple-template-root": "off",
-      " eslintPreCommitBaseCommand ": " eslint --max-warnings=0 "
     }
   }
 }
