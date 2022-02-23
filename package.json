@@ -16,8 +16,7 @@
     "lint-staged": {
         "*.{js,json,css,md,html,vue,ts}": [
             "prettier --write  --ignore-unknown",
-            "prettier --check",
-            "git add"
+            "prettier --check"
         ],
         "*.js": "eslint --cache --fix"
     },
