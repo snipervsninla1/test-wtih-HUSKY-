@@ -10,5 +10,11 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['vue', '@typescript-eslint'],
-  rules: {},
+  rules: {
+    'space-before-blocks': 'off',
+    'semi-style': 'error',
+    'func-name-matching': 'warn',
+    'dot-notation': 'warn',
+    'comma-style': 'warn',
+  },
 };

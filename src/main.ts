@@ -19,4 +19,4 @@ const test = {
 };
 const personne = test['name'];
 const foo = { class: 'CS 101' };
-const x = foo['class'];
+var x = foo['class'];

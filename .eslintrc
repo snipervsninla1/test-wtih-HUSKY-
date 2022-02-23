@@ -21,7 +21,6 @@
     },
     "rules": {
         "vue/no-multiple-template-root": "off",
-        " eslintPreCommitBaseCommand ": " eslint --max-warnings=0 ",
         "prettier/prettier": "error",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "error",
@@ -45,6 +44,5 @@
         "space-before-blocks": "off",
         "semi-style": "error",
         "func-name-matching": "warn",
-        "dot-notation": "warn"
     }
 }
