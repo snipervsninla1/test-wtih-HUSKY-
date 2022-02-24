@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint src/main.ts",
+    "lint": "eslint src/main.ts ",
     "format": "prettier --write .",
     "prepare": "husky install",
     "postinstall": "husky install",
@@ -17,8 +17,7 @@
     "*.{js,json,css,md,html,vue,ts}": [
       "prettier --write  --ignore-unknown",
       "prettier --check"
-    ],
-    "*.js": "eslint --cache --fix"
+    ]
   },
   "dependencies": {
     "eslint-config-with-prettier": "^6.0.0",

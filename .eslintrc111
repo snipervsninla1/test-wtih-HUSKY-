@@ -16,8 +16,6 @@
     "globals": {
         "_": true,
         "$": true
-
-
     },
     "rules": {
         "vue/no-multiple-template-root": "off",
@@ -43,6 +41,6 @@
         ],
         "space-before-blocks": "off",
         "semi-style": "error",
-        "func-name-matching": "warn",
+        "func-name-matching": "warn"
     }
 }

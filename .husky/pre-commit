@@ -2,5 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npx lint-staged
-npx lint
-npx prettier --check
+
+npm run lint
