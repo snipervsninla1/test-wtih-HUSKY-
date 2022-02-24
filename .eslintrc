@@ -19,13 +19,12 @@
     },
     "rules": {
         "vue/no-multiple-template-root": "off",
-        "prettier/prettier": "error",
         "arrow-body-style": "off",
         "prefer-arrow-callback": "error",
         "curly": ["error", "all"],
         "indent": [
             "error",
-            "tab"
+            2
         ],
         "linebreak-style": [
             "error",
@@ -41,6 +40,6 @@
         ],
         "space-before-blocks": "off",
         "semi-style": "error",
-        "func-name-matching": "warn"
+        "func-name-matching": "warn",
     }
 }
